@@ -1,0 +1,191 @@
+
+.main-images {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.home-about {
+    width: 200px;
+    background-color: #0C356A;
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin: 3rem;
+    height: 1.8rem;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 15px 50px;
+
+}
+
+.home-about h5 {
+    font-weight: lighter;
+}
+.home-about > h5 > a {
+    color: white;
+}
+.home-about > h5 > a:hover {
+    color: rgb(162, 193, 220);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2rem 5rem;
+    gap: 3rem;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.email-address, .address-details, .mobile {
+    background-color: #dbedf5;
+    /* border: 2px solid #0C356A; */
+    width: 450px;
+    height: 150px;
+    position: relative;
+    /* margin: auto; */
+    
+    
+
+}
+.phone, .email, .address {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    
+}
+ .info p {
+    font-size: medium;
+}
+
+.address svg, .phone svg, .email svg {
+    max-width: 70px;
+    min-width: 70px;
+
+}
+.address {
+    transform: translate(0, 10%);
+}
+.email {
+    transform: translate(5%, 60%);
+}
+.phone {
+    transform: translate(5%, 60%);
+}
+
+
+.info a {
+    text-decoration:solid;
+    color: #0C356A;
+    font-family: 'Kanit', sans-serif;
+    font-size: large;
+    font-weight:normal;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.form input {
+    height: 80px;
+}
+.form label  {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(38, 38, 37, 0.674);
+
+}
+.form button {
+    width: 10rem;
+    background-color: #0C356A;
+}
+.form button:hover {
+    background-color: #01acef;
+}
+.form input, .form textarea {
+    background-color: #dbedf5;
+
+}
+#map {
+    height: 100%;
+}
+
+
+.email2, .phone2, .address2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+}
+.information a {
+    text-decoration:solid;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight:lighter;
+
+
+}
+.information a:hover {
+    color: rgb(179, 193, 193);
+}
+.email2,.phone2,.address2 > svg {
+    color: #01acef;
+}
+.information p {
+    font-family: 'Kanit', sans-serif;
+    font-weight:lighter;
+}
+
+.copyright {
+    
+    padding-bottom: 0.2rem;
+    font-family: 'Kanit', sans-serif;
+    background-color: #0C356A;
+    color: white;
+}
+@media (max-width: 1050px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .email-address, .address-details, .mobile {
+        width: 100%;
+ 
+    }
+}
+@media (max-width:480px) {
+    .phone svg, .email svg, .address svg {
+        width: 50px;
+        height: 50px;
+        
+    }
+    .phone, .email, .address {
+        
+        gap: 1rem;
+        
+    }
+    .main {
+        margin: 2rem;
+    }
+
+}
+@media (max-width: 380px) {
+    .main {
+        margin: 1rem;
+    }
+    .info a, .info p {
+        font-size: 14px;
+    }
+ }
+
+  
+  
